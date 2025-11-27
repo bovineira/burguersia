@@ -65,8 +65,8 @@ function App() {
           transition={{ duration: 0.6, ease: "easeOut" }}
           className="text-center font-anton text-7xl font-black uppercase leading-none tracking-wider text-neon-red sm:text-8xl md:text-9xl"
           style={{
-            textShadow: '0 0 20px rgba(255, 0, 64, 0.6), 0 0 40px rgba(255, 0, 64, 0.4)',
-            filter: 'drop-shadow(0 0 8px rgba(255, 0, 64, 0.5))'
+            textShadow: '0 0 15px rgba(255, 0, 64, 0.4), 0 2px 10px rgba(0, 0, 0, 0.8)',
+            filter: 'drop-shadow(0 0 5px rgba(255, 0, 64, 0.3))'
           }}
         >
           BLACK
@@ -87,7 +87,7 @@ function App() {
           2 HAMBÚRGUERES POR:
         </motion.h2>
 
-        {/* 3. PREÇO - Protagonista com Glow Reduzido */}
+        {/* 3. PREÇO - Protagonista Centralizado */}
         <motion.div
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ 
@@ -98,9 +98,26 @@ function App() {
             duration: 0.5, 
             delay: 0.4,
           }}
-          className="flex items-start gap-2"
+          className="flex items-center justify-center gap-1"
         >
           <motion.span
+            animate={{ 
+              scale: [1, 1.02, 1],
+            }}
+            transition={{
+              duration: 2.5,
+              repeat: Infinity,
+              ease: "easeInOut"
+            }}
+            className="font-anton text-3xl font-bold text-gold sm:text-4xl md:text-5xl"
+            style={{
+              textShadow: '0 2px 8px rgba(0, 0, 0, 0.6)',
+              filter: 'drop-shadow(0 0 3px rgba(255, 215, 0, 0.2))'
+            }}
+          >
+            R$
+          </motion.span>
+          <motion.div
             animate={{ 
               scale: [1, 1.03, 1],
             }}
@@ -109,26 +126,10 @@ function App() {
               repeat: Infinity,
               ease: "easeInOut"
             }}
-            className="mt-6 font-anton text-4xl font-bold text-gold sm:mt-8 sm:text-5xl md:text-6xl"
+            className="font-anton text-8xl font-black leading-none text-gold sm:text-9xl md:text-[10rem] lg:text-[11rem]"
             style={{
-              filter: 'drop-shadow(0 0 8px rgba(255, 215, 0, 0.5))'
-            }}
-          >
-            R$
-          </motion.span>
-          <motion.div
-            animate={{ 
-              scale: [1, 1.05, 1],
-            }}
-            transition={{
-              duration: 2.5,
-              repeat: Infinity,
-              ease: "easeInOut"
-            }}
-            className="font-anton text-8xl font-black leading-none text-gold sm:text-9xl md:text-[10rem] lg:text-[12rem]"
-            style={{
-              textShadow: '0 0 30px rgba(255, 215, 0, 0.6), 0 4px 20px rgba(0, 0, 0, 0.8)',
-              filter: 'drop-shadow(0 0 15px rgba(255, 215, 0, 0.5))'
+              textShadow: '0 0 20px rgba(255, 215, 0, 0.3), 0 4px 15px rgba(0, 0, 0, 0.7)',
+              filter: 'drop-shadow(0 0 8px rgba(255, 215, 0, 0.25))'
             }}
           >
             49,90
@@ -150,7 +151,7 @@ function App() {
               shake ? 'animate-shake' : ''
             }`}
             style={{
-              boxShadow: '0 10px 40px rgba(255, 215, 0, 0.4), 0 0 20px rgba(255, 215, 0, 0.3)'
+              boxShadow: '0 8px 30px rgba(255, 215, 0, 0.25), 0 0 15px rgba(255, 215, 0, 0.2)'
             }}
           >
             <ShoppingBag className="h-7 w-7 transition-transform group-hover:scale-110 sm:h-9 sm:w-9" />
