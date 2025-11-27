@@ -144,7 +144,7 @@ function App() {
           className="mt-4 w-full max-w-md px-4"
         >
           <a
-            href="https://www.ifood.com.br"
+            href="https://urlgeni.us/ifood/xnqocI"
             target="_blank"
             rel="noopener noreferrer"
             className={`sheen-effect group relative flex w-full items-center justify-center gap-3 rounded-full bg-gold px-8 py-5 font-bebas text-2xl font-bold uppercase tracking-wide text-black shadow-2xl transition-all duration-300 hover:scale-105 hover:shadow-gold/50 sm:py-6 sm:text-3xl md:text-4xl ${
