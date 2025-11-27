@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+/* Custom neon glow effects */
+.neon-text {
+  text-shadow: 
+    0 0 10px #ff0040,
+    0 0 20px #ff0040,
+    0 0 30px #ff0040,
+    0 0 40px #ff0040,
+    0 0 70px #ff0040,
+    0 0 80px #ff0040,
+    0 0 100px #ff0040;
+}
+
+.neon-text-purple {
+  text-shadow: 
+    0 0 10px #bc13fe,
+    0 0 20px #bc13fe,
+    0 0 30px #bc13fe,
+    0 0 40px #bc13fe,
+    0 0 70px #bc13fe;
+}
+
+.price-glow {
+  text-shadow: 
+    0 0 20px #FFD700,
+    0 0 30px #FFD700,
+    0 0 40px #FFD700,
+    0 0 50px #FFD700,
+    0 0 60px #FFD700;
+}
+
+/* Sheen effect overlay */
+.sheen-effect {
+  position: relative;
+  overflow: hidden;
+}
+
+.sheen-effect::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.4),
+    transparent
+  );
+  animation: sheen 3s ease-in-out infinite;
+}
+
+@keyframes sheen {
+  0% {
+    left: -100%;
+  }
+  20% {
+    left: 100%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
