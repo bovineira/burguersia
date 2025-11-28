@@ -17,6 +17,13 @@ function App() {
 
   return (
     <div className="relative min-h-screen w-full overflow-hidden bg-deep-black">
+      {/* Faixa Fixa no Topo - SEXTA, SÁBADO E DOMINGO */}
+      <div className="fixed top-0 left-0 right-0 z-50 bg-gold py-3 px-4">
+        <p className="text-center font-bebas text-xl font-bold uppercase tracking-wider text-black sm:text-2xl md:text-3xl">
+          SEXTA, SÁBADO E DOMINGO
+        </p>
+      </div>
+
       {/* Background Image with Strong Overlay */}
       <div 
         className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
@@ -56,7 +63,7 @@ function App() {
       />
 
       {/* Content Container - FLEXBOX VERTICAL COM GAP */}
-      <div className="relative z-10 flex min-h-screen flex-col items-center justify-center gap-8 px-4 py-12">
+      <div className="relative z-10 flex min-h-screen flex-col items-center justify-center gap-8 px-4 py-12 pt-24">
         
         {/* 1. HEADLINE - Black Friday */}
         <motion.h1
