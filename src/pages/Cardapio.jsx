@@ -75,7 +75,7 @@ function Cardapio() {
       {/* Content Container - FLEXBOX VERTICAL COM GAP */}
       <div className="relative z-10 flex min-h-screen flex-col items-center justify-center gap-8 px-4 py-12 pt-24">
         
-        {/* 1. HEADLINE - Cupom 30% */}
+        {/* 1. HEADLINE - Black Friday */}
         <motion.h1
           initial={{ opacity: 0, y: -30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -86,9 +86,9 @@ function Cardapio() {
             filter: 'drop-shadow(0 0 5px rgba(255, 0, 64, 0.3))'
           }}
         >
-          CUPOM
+          BLACK
           <br />
-          30% OFF
+          FRIDAY
         </motion.h1>
 
         {/* 2. SUB-HEADLINE */}
