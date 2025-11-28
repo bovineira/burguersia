@@ -157,7 +157,7 @@ function Cardapio() {
           className="mt-4 w-full max-w-md px-4"
         >
           <a
-            href="https://urlgeni.us/ifood/xnqocI"
+            href="https://app.cardapioweb.com/burguersia?cid=2rzn"
             target="_blank"
             rel="noopener noreferrer"
             onClick={() => {
