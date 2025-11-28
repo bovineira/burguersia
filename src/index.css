@@ -49,4 +49,20 @@ body {
   }
 }
 
+/* Background mobile 9:16 - garante que a imagem cubra toda a tela */
+.bg-mobile-cover {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 640px) {
+  .bg-mobile-cover {
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    width: 100%;
+  }
+}
+
 

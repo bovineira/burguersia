@@ -36,15 +36,15 @@ function App() {
         </p>
       </div>
 
-      {/* Background Image with Strong Overlay */}
+      {/* Background Image with Light Overlay */}
       <div 
-        className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
+        className="absolute inset-0 z-0 bg-mobile-cover"
         style={{
-          backgroundImage: `url('https://images.unsplash.com/photo-1568901346375-23c9450c58cd?q=80&w=2099&auto=format&fit=crop')`,
+          backgroundImage: `url('/images/background.webp')`,
         }}
       >
-        {/* Overlay escuro FORTE para contraste */}
-        <div className="absolute inset-0 bg-black/90"></div>
+        {/* Overlay escuro leve (20%) para contraste */}
+        <div className="absolute inset-0 bg-black/20"></div>
       </div>
 
       {/* Decorative Blur Elements (Background) */}
