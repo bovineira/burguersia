@@ -76,20 +76,20 @@ function Cardapio() {
       {/* Content Container - FLEXBOX VERTICAL COM GAP */}
       <div className="relative z-10 flex min-h-screen flex-col items-center justify-center gap-8 px-4 py-12 pt-24">
         
-        {/* 1. HEADLINE - Black Friday */}
+        {/* 1. HEADLINE - A Melhor da Região */}
         <motion.h1
           initial={{ opacity: 0, y: -30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
-          className="text-center font-anton text-7xl font-black uppercase leading-none tracking-wider text-neon-red sm:text-8xl md:text-9xl"
+          className="text-center font-anton text-6xl font-black uppercase leading-none tracking-wider text-neon-red sm:text-7xl md:text-8xl"
           style={{
             textShadow: '0 0 15px rgba(255, 0, 64, 0.4), 0 2px 10px rgba(0, 0, 0, 0.8)',
             filter: 'drop-shadow(0 0 5px rgba(255, 0, 64, 0.3))'
           }}
         >
-          BLACK
+          A MELHOR
           <br />
-          FRIDAY
+          DA REGIÃO
         </motion.h1>
 
         {/* 2. SUB-HEADLINE */}
