@@ -3,6 +3,7 @@ import { motion } from 'framer-motion'
 import { Menu } from 'lucide-react'
 
 function Cardapio() {
+  // Página de cardápio - aquisição normal
   const [shake, setShake] = useState(false)
 
   // Shake button every 5 seconds
@@ -18,8 +19,8 @@ function Cardapio() {
   useEffect(() => {
     if (window.fbq) {
       window.fbq('track', 'ViewContent', {
-        content_name: 'Cupom 30% Off - Cardápio',
-        content_category: 'Promoção',
+        content_name: 'Cardápio - Burguersia',
+        content_category: 'Cardápio',
         currency: 'BRL'
       });
     }
@@ -27,10 +28,10 @@ function Cardapio() {
 
   return (
     <div className="relative min-h-screen w-full overflow-hidden bg-deep-black">
-      {/* Faixa Fixa no Topo - SEXTA, SÁBADO E DOMINGO */}
+      {/* Faixa Fixa no Topo - A PARTIR DAS 18:30 - Atualizado para aquisição normal */}
       <div className="fixed top-0 left-0 right-0 z-50 bg-gold py-3 px-4">
         <p className="text-center font-bebas text-xl font-bold uppercase tracking-wider text-black sm:text-2xl md:text-3xl">
-          SEXTA, SÁBADO E DOMINGO
+          A PARTIR DAS 18:30
         </p>
       </div>
 
@@ -101,55 +102,10 @@ function Cardapio() {
             textShadow: '0 2px 10px rgba(0, 0, 0, 0.8)'
           }}
         >
-          DESCONTO NO CARDÁPIO:
+          ACESSE NOSSO CARDÁPIO
         </motion.h2>
 
-        {/* 3. DESCONTO - Protagonista Centralizado */}
-        <motion.div
-          initial={{ opacity: 0, scale: 0.8 }}
-          animate={{ 
-            opacity: 1, 
-            scale: 1,
-          }}
-          transition={{ 
-            duration: 0.5, 
-            delay: 0.4,
-          }}
-          className="flex items-center justify-center gap-1"
-        >
-          <motion.div
-            animate={{ 
-              scale: [1, 1.03, 1],
-            }}
-            transition={{
-              duration: 2.5,
-              repeat: Infinity,
-              ease: "easeInOut"
-            }}
-            className="font-anton text-8xl font-black leading-none text-gold sm:text-9xl md:text-[10rem] lg:text-[11rem]"
-            style={{
-              textShadow: '0 0 20px rgba(255, 215, 0, 0.3), 0 4px 15px rgba(0, 0, 0, 0.7)',
-              filter: 'drop-shadow(0 0 8px rgba(255, 215, 0, 0.25))'
-            }}
-          >
-            30%
-          </motion.div>
-        </motion.div>
-
-        {/* 4. TEXTO INFORMATIVO */}
-        <motion.p
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.6, delay: 0.5 }}
-          className="text-center font-bebas text-lg text-white sm:text-xl md:text-2xl"
-          style={{
-            textShadow: '0 2px 10px rgba(0, 0, 0, 0.8)'
-          }}
-        >
-          aplicado automaticamente clicando no botão abaixo
-        </motion.p>
-
-        {/* 5. BOTÃO CTA */}
+        {/* 3. BOTÃO CTA */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -164,7 +120,7 @@ function Cardapio() {
               // Facebook Pixel - Rastreio de clique no botão
               if (window.fbq) {
                 window.fbq('track', 'InitiateCheckout', {
-                  content_name: 'Cupom 30% Off - Cardápio',
+                  content_name: 'Cardápio - Burguersia',
                   currency: 'BRL'
                 });
               }
@@ -181,7 +137,7 @@ function Cardapio() {
           </a>
         </motion.div>
 
-        {/* 6. FOOTER */}
+        {/* 4. FOOTER */}
         <motion.p
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
