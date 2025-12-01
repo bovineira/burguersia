@@ -74,7 +74,7 @@ function Cardapio() {
       />
 
       {/* Content Container - FLEXBOX VERTICAL COM GAP */}
-      <div className="relative z-10 flex min-h-screen flex-col items-center justify-center gap-8 px-4 py-12 pt-24">
+      <div className="relative z-10 flex min-h-screen flex-col items-center justify-center gap-8 px-4 py-12" style={{ paddingTop: 'calc(6rem - 50px)' }}>
         
         {/* 1. HEADLINE - A Melhor da Região */}
         <motion.h1
