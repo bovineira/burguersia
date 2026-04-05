@@ -117,9 +117,8 @@ function Cardapio() {
             target="_blank"
             rel="noopener noreferrer"
             onClick={() => {
-              // Facebook Pixel - Rastreio de clique no botão
               if (window.fbq) {
-                window.fbq('track', 'InitiateCheckout', {
+                window.fbq('track', 'Subscribe', {
                   content_name: 'Cardápio - Burguersia',
                   currency: 'BRL'
                 });

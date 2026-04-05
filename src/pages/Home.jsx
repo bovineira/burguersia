@@ -166,9 +166,8 @@ function Home() {
             target="_blank"
             rel="noopener noreferrer"
             onClick={() => {
-              // Facebook Pixel - Rastreio de clique no botão
               if (window.fbq) {
-                window.fbq('track', 'InitiateCheckout', {
+                window.fbq('track', 'Subscribe', {
                   content_name: 'Black Friday - 2 Hambúrgueres',
                   value: 49.90,
                   currency: 'BRL'
