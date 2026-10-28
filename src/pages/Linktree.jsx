@@ -152,13 +152,13 @@ function Linktree() {
             initial={{ scale: 0.6, rotate: -8, opacity: 0 }}
             animate={{ scale: 1, rotate: 0, opacity: 1 }}
             transition={{ type: 'spring', stiffness: 220, damping: 14 }}
-            className="flex h-32 w-32 items-center justify-center overflow-hidden rounded-full border-[5px] border-black bg-[#FFC72C] p-3 shadow-[0_8px_0_#000]"
+            className="flex h-32 w-32 items-center justify-center overflow-hidden rounded-full border-[5px] border-black bg-black p-2 shadow-[0_8px_0_#000] ring-4 ring-white/90"
           >
             {logoOk ? (
               <img
-                src="/images/logo.png"
+                src="/images/LOGO-PNG-QUALIDADE.png"
                 alt="Burguersia"
-                className="h-full w-full object-contain"
+                className="h-full w-full scale-125 object-contain"
                 onError={() => setLogoOk(false)}
               />
             ) : (
