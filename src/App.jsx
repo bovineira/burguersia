@@ -2,6 +2,7 @@ import { Routes, Route } from 'react-router-dom'
 import Home from './pages/Home'
 import Cardapio from './pages/Cardapio'
 import Linktree from './pages/Linktree'
+import ComunidadeWpp from './pages/ComunidadeWpp'
 import './index.css'
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
       <Route path="/" element={<Home />} />
       <Route path="/cardapio" element={<Cardapio />} />
       <Route path="/linktree" element={<Linktree />} />
+      <Route path="/comunidade-wpp" element={<ComunidadeWpp />} />
     </Routes>
   )
 }
